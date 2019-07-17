@@ -1,0 +1,86 @@
+/*menu css*/
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 1s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* .control:hover {cursor: pointer;} */
+/*.content {width: 200px; height: 200px; background: yellow;}*/
+/* .invisible {display: none;} */
+.content{
+  display: block;
+  left: 0;
+  left: 0px;
+  height: 100vh;
+  top:0;
+  position: absolute;
+  -webkit-animation: slideIn 1s forwards;
+  -moz-animation: slideIn 1s forwards;
+  animation: slideIn 1s forwards;
+}
+.control{
+  font-size: 20px;
+    font-weight: bold;
+    color: #03A9F4;
+    border: 1px solid #ced6d6;
+    display: block;
+    float: left;
+    padding: 5px 10px;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.hi{
+    text-align: center;
+}
