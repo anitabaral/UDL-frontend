@@ -27,11 +27,6 @@ class Academic extends Component {
 
         const { year, faculty, gender, result } = this.props;
         this.props.search({ year, faculty, gender, result });
-    {this.tableDisplay()}
-    }
-    tableDisplay(){
-        // const{collection}=this.props;
-        console.log(this.props.collections)
     }
     renderButton() {
         return (

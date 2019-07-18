@@ -8,7 +8,11 @@ class Sidebar extends Component {
                     <a href="/">
                         <i class="fas fa-tachometer-alt"></i>  Dahboard</a>
                     <a href="/info">
+<<<<<<< HEAD
                         <i class="fas fa-database"></i> Academic</a>
+=======
+                        <i class="fas fa-database"></i>  Academic</a>
+>>>>>>> 3415f86ea8595782298bfd67cd6abb496a1445bb
                     <a href="#">
                         <i class="fas fa-id-card"></i>  Profile </a>
                     <a href="#">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import ReactDOM from 'react-dom';
 import { Switch, Route, Link, BrowserRouter as Router, browserHistory } from 'react-router-dom'
 // import './index.css';
@@ -70,3 +71,40 @@ export default Index;
 // // // unregister() to register() below. Note this comes with some pitfalls.
 // // // Learn more about service workers: https://bit.ly/CRA-PWA
 // // serviceWorker.unregister();
+=======
+import './App.css';
+import { Provider, } from 'react-redux';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { createStore, applyMiddleware } from 'redux';
+import reducers from './reducers';
+import ReduxThunk from 'redux-thunk';
+import Loginpage from './login/loginpage';
+
+class App extends Component {
+
+
+  render() {
+    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk))
+
+
+    return (
+
+      <Provider store={store}>
+        <Loginpage/>
+         
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 604a02102e1b5b9243cf86a9055e3490a7ae4aba
+      </Provider>
+
+
+
+
+    );
+  }
+}
+export default App;
+>>>>>>> 3415f86ea8595782298bfd67cd6abb496a1445bb

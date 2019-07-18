@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 .form-group::before{
     content: ''
 }
 
 .form-group:last-of-type::before {
     content: ''
+=======
+.form-group::before{
+    content: '';
+}
+
+.form-group:last-of-type::before {
+    content: '';
+>>>>>>> 3415f86ea8595782298bfd67cd6abb496a1445bb
 }

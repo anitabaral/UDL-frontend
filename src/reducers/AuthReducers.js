@@ -5,7 +5,18 @@ import {
     LOGIN_USER_FAIL,
     LOGIN_USER
 } from '../actions/types';
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+import {Route ,Link ,BrowseRouter as Router} from 'react-router-dom';
+
+import Sidebar from '../superadmin/sidebar';
+import { emailChanged } from '../actions';
+=======
+
+>>>>>>> 604a02102e1b5b9243cf86a9055e3490a7ae4aba
+>>>>>>> 3415f86ea8595782298bfd67cd6abb496a1445bb
 const INITIAL_STATE = {
     email: '',
     password: '',
@@ -16,8 +27,16 @@ const INITIAL_STATE = {
 
 };
 
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 604a02102e1b5b9243cf86a9055e3490a7ae4aba
+>>>>>>> 3415f86ea8595782298bfd67cd6abb496a1445bb
 export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case EMAIL_CHANGED:
@@ -28,9 +47,16 @@ export default (state = INITIAL_STATE, action) => {
         case PASSWORD_CHANGED:
             return { ...state, password: action.payload }
         case LOGIN_USER_SUCCESS:
+<<<<<<< HEAD
            
         window.location.href='/info'
         
+=======
+<<<<<<< HEAD
+           
+        window.location.href='/info'
+            
+>>>>>>> 3415f86ea8595782298bfd67cd6abb496a1445bb
             return {
                 ...state,
                 error :'',
@@ -39,7 +65,10 @@ export default (state = INITIAL_STATE, action) => {
                 password:" ",
             
             }
+<<<<<<< HEAD
             
+=======
+>>>>>>> 3415f86ea8595782298bfd67cd6abb496a1445bb
         case LOGIN_USER_FAIL:
         console.log('err');
         
@@ -49,6 +78,22 @@ export default (state = INITIAL_STATE, action) => {
                 email:"",
                 password:""
             
+<<<<<<< HEAD
+=======
+=======
+            return {
+                ...state,
+                error :'',
+                token: action.payload
+            }
+
+        case LOGIN_USER_FAIL:
+        console.log('err');
+            return {
+                ...state,
+                error: 'authentication Failed',
+>>>>>>> 604a02102e1b5b9243cf86a9055e3490a7ae4aba
+>>>>>>> 3415f86ea8595782298bfd67cd6abb496a1445bb
             }
         case LOGIN_USER:
             return { ...state, error: '' }
